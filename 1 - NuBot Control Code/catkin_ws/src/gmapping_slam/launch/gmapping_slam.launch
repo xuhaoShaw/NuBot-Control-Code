@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="odom_publish" pkg="tf_publish" type="odom_publish"></node>
+	<node name="robot_tf_publish" pkg="tf_publish" type="robot_tf_publish"></node>
+
+	<node name="delta_lidar"    pkg="delta_lidar"  type="delta_lidar_node" output="screen">
+  	<param name="serial_port"         type="string" value="/dev/ttyUSB0"/>
+  	<param name="frame_id"            type="string" value="laser"/>
+  	</node>
+
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find gmapping_slam)/mapping.rviz"></node>
+
+	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" >
+		<param name="delta" value="0.03"/>
+		<param name="maxUrange" value="6"/> <!--set maxUrange < maximum range of the real sensor <= maxRange-->
+		<param name="maxRange" value="20"/>
+		<param name="map_update_interval" value="3"/>
+		<param name="minimumScore" value="50"/>
+		<param name="linearUpdate" value="0.5"/>
+		<param name="angularUpdate" value="0.3"/>
+	</node>
+
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/corvin/catkin_ws/devel
+
+Name: sparse_bundle_adjustment
+Description: Description of sparse_bundle_adjustment
+Version: 0.4.4
+Cflags: -I/home/corvin/catkin_ws/src/sparse_bundle_adjustment-melodic-devel/include
+Libs: -L/home/corvin/catkin_ws/devel/lib -lsba
+Requires: 

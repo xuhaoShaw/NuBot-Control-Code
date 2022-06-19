@@ -1,0 +1,8 @@
+prefix=/home/corvin/catkin_ws/devel
+
+Name: gmapping_slam
+Description: Description of gmapping_slam
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/corvin/catkin_ws/devel/lib 
+Requires: 

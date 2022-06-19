@@ -1,0 +1,8 @@
+prefix=/home/corvin/catkin_ws/devel
+
+Name: tf_publish
+Description: Description of tf_publish
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/corvin/catkin_ws/devel/lib 
+Requires: 

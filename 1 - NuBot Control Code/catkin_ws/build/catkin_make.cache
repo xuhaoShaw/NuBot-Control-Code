@@ -1,0 +1,2 @@
+delta_III_ros:gmapping_slam:hector_slam:karto_slam:open_karto:slam_karto:sparse_bundle_adjustment-melodic-devel:tf_publish
+-DCATKIN_DEVEL_PREFIX=/home/corvin/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/corvin/catkin_ws/install -G Unix Makefiles

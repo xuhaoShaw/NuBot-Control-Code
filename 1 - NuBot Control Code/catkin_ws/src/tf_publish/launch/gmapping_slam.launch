@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+	<node name="odom_publish" pkg="tf_publish" type="odom_publish"></node>
+	<node name="robot_tf_publish" pkg="tf_publish" type="robot_tf_publish"></node>
+	<node name="rviz" pkg="rviz" type="rviz"></node>
+
+	<node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" outout="screen"></node>
+
+
+</launch>
